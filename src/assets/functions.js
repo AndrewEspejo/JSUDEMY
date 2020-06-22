@@ -42,25 +42,54 @@
 // console.log(almuerzo)
 
 //forma nueva 
-function comer(comida='Pan') {
-   return `Vamos a comer ${comida}`
+// function comer(comida='Pan') {
+//    return `Vamos a comer ${comida}`
+// }
+// let almuerzo;
+
+// almuerzo = comer();
+
+// console.log(almuerzo)
+
+
+// //Function expression
+
+// const suma = function(a=3,b=8) {
+//    return a+b
+// }
+// console.log(suma(1,2));
+
+// const saludar = function(nombre='Visitant', edad=20,trabajo='web developer') {
+//    return `Hola ${nombre}, tienes ${edad} y trabajas como ${trabajo}`
+// };
+
+// console.log(saludar('Andres',24,))
+
+
+
+//IIFE  
+
+(function (tecnología) {
+   console.log(`Aprendiendo ${tecnología}`)
+})('Javascript');
+
+
+//Métodos de propiedad
+//Cuando una función se pone dentro de un objeto
+
+const musica = {
+   reproducir: function() {
+      console.log('Reproduciendo músicia');
+   },
+   pausar: function() {
+      console.log('Pausa la música')
+   }
 }
-let almuerzo;
 
-almuerzo = comer();
-
-console.log(almuerzo)
-
-
-//Function expression
-
-const suma = function(a=3,b=8) {
-   return a+b
+//Los métodos también pueden crearse fuera del objeto
+musica.borrar =function(id) {
+   console.log(`Borrando la canción con el id: ${id}`);
 }
-console.log(suma(1,2));
 
-const saludar = function(nombre='Visitant', edad=20,trabajo='web developer') {
-   return `Hola ${nombre}, tienes ${edad} y trabajas como ${trabajo}`
-};
-
-console.log(saludar('Andres',24,))
+musica.reproducir();
+musica.pausar();
