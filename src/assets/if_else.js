@@ -43,21 +43,41 @@ if(edad>=18) {
 
 //operador or
 
-let efectivo =300,
-      credito =250,
-      disponible=efectivo+credito
-      totalCarrito=500;
+// let efectivo =300,
+//       credito =250,
+//       disponible=efectivo+credito
+//       totalCarrito=500;
 
-if(totalCarrito < efectivo || totalCarrito <credito) {
-   console.log('Puedo pagar')
-} else if (totalCarrito < disponible) {
-   console.log('Pague con ambos')
-} else {
-   console.log('No puedo pagar')
+// if(totalCarrito < efectivo || totalCarrito <credito) {
+//    console.log('Puedo pagar')
+// } else if (totalCarrito < disponible) {
+//    console.log('Pague con ambos')
+// } else {
+//    console.log('No puedo pagar')
+// }
+
+
+// //Ternario
+
+// const logueado = true;
+// console.log( logueado === true ? 'Si se logueo': 'No se logueo')
+
+
+//Switch
+
+const metodoPago= 'credit card'
+
+switch(metodoPago) { 
+   case 'efectivo':
+      console.log(`EL usuario pago con ${metodoPago}`);
+      break
+   case 'cheque':
+      console.log(`EL usuario pago con ${metodoPago}`);
+      break
+   case 'credit card':
+      console.log(`EL usuario pago con ${metodoPago}`);
+      break
+   default:
+      console.log('método de pago no soportado')
+      break
 }
-
-
-//Ternario
-
-const logueado = true;
-console.log( logueado === true ? 'Si se logueo': 'No se logueo')
